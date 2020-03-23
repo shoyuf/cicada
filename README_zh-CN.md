@@ -91,3 +91,9 @@ export default {
 ## 添加书签
 
 在网站底部将收藏书签拖拽到浏览器书签栏中。
+
+## For Docker
+
+1. `$ docker run -d --name cicada -P -v `pwd`/cicada-sqlite:/app/sqlite shoyuf/thinkjs-cicada:latest`
+
+2. Execute `sqlite/sqlite.sql` on `cicada.sqlite`

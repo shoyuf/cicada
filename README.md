@@ -90,3 +90,9 @@ Modify `nginx.conf` and soft link to nginx conf folder, then reload nginx.
 ## Add bookmark
 
 Drag bookmarks in the site's footer to your browser bookmarks bar.
+
+## For Docker
+
+1. `$ docker run -d --name cicada -P -v `pwd`/cicada-sqlite:/app/sqlite shoyuf/thinkjs-cicada:latest`
+
+2. Execute `sqlite/sqlite.sql` on `cicada.sqlite`
